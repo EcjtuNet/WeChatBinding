@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>班级学院绑定</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js "></script>
+    <script type="text/javascript" src="js/classBinding.js"></script>
+</head>
+<body>
+    <div class="g-dialog" id="dialog">
+        <div class="dialog-window">
+            <div class="win_header" id="icon"></div>
+            <div class="win_con" id="win_con"></div>
+            <div class="win_btn" id="btn">
+                <button class="btn" id="btn_son" onclick="wx.closeWindow();"></button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+    	<p>日小新查询服务</p>
+    	<form method="post">
+    	    <div class="contact">
+    	        <label>
+    	            <span>学院</span>
+    		        <select class="contact_input" id="list1">
+    			        <option value="1">软件学院</option>
+    			        <option value="2">国际学院</option>
+    			        <option value="3">人文学院</option>
+    		        </select>
+    		    </label>
+    		</div>
+    		<div class="contact">
+    		    <label>
+    		        <span>班级</span>
+    		        <select class="contact_input" id="list2">
+    			        <option value="1">（1）班</option>
+    			        <option value="2">（1）班</option>
+    			        <option value="3">（1）班</option>
+    		        </select>
+    		    </label>
+    		</div>
+    	</form>
+    	<p class="end">power by 日新团队</p>
+    	<input id="classGet" type="button" value="绑定" />
+    </div>
+</body>
+</html>
